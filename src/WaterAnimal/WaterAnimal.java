@@ -11,7 +11,7 @@ import Animal.Animal;
  */
 public class WaterAnimal extends Animal {
     //Constructor tanpa parameter
-    WaterAnimal () {
+    public WaterAnimal () {
         weight = 0;
         tipe = 0;
         tamed = false;
@@ -20,7 +20,7 @@ public class WaterAnimal extends Animal {
     }
     
     //Constructor dengan parameter
-    WaterAnimal (int _weight, 
+    public WaterAnimal (int _weight, 
             int _tipe, 
             boolean _tamed,
             int _x,
@@ -33,7 +33,7 @@ public class WaterAnimal extends Animal {
     }
     
     //Copy Constructor
-    WaterAnimal (WaterAnimal w) {
+    public WaterAnimal (WaterAnimal w) {
         weight = w.weight;
         tipe = w.tipe;
         tamed = w.tamed;
