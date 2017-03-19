@@ -15,7 +15,7 @@ import Animal.Animal;
 public class LandAnimal extends Animal{
     
     //Constructor tanpa parameter
-    LandAnimal () {
+    public LandAnimal () {
         weight = 0;
         tipe = 0;
         tamed = false;
@@ -24,7 +24,7 @@ public class LandAnimal extends Animal{
     }
     
     //Constructor dengan parameter
-    LandAnimal (int _weight, 
+    public LandAnimal (int _weight, 
             int _tipe, 
             boolean _tamed,
             int _x,
@@ -37,7 +37,7 @@ public class LandAnimal extends Animal{
     }
     
     //Copy Constructor
-    LandAnimal (LandAnimal l) {
+    public LandAnimal (LandAnimal l) {
         weight = l.weight;
         tipe = l.tipe;
         tamed  = l.tamed;
