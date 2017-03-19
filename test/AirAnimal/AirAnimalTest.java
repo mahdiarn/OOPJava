@@ -91,6 +91,23 @@ public class AirAnimalTest {
     
     @Test
     /**
+     * Test copy constructor
+     *
+     */
+    public void testCopyConstructor() {
+        System.out.println("Test Copy constructor");
+        AirAnimal instance1,instance2;
+        instance1 = new AirAnimal(100,1,true,10,5);
+        instance2 = new AirAnimal(instance1);
+        assertTrue(instance2.getWeight() == 100);
+        assertTrue(instance2.getTipe() == 1);
+        assertTrue(instance2.getTamed() == true);
+        assertTrue(instance2.getX() == 10);
+        assertTrue(instance2.getY() == 5);
+    }
+    
+    @Test
+    /**
      * Testing setter, of class AirAnimal.
      */
     public void testSetter() {

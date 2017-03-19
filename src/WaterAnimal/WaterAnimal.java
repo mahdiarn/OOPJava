@@ -10,7 +10,7 @@ import Animal.Animal;
  * @author Mahdiar Naufal
  */
 public class WaterAnimal extends Animal {
-    //Constructor
+    //Constructor tanpa parameter
     WaterAnimal () {
         weight = 0;
         tipe = 0;
@@ -19,6 +19,7 @@ public class WaterAnimal extends Animal {
         location_y = -1;
     }
     
+    //Constructor dengan parameter
     WaterAnimal (int _weight, 
             int _tipe, 
             boolean _tamed,
@@ -31,6 +32,14 @@ public class WaterAnimal extends Animal {
         location_y = _y;
     }
     
+    //Copy Constructor
+    WaterAnimal (WaterAnimal w) {
+        weight = w.weight;
+        tipe = w.tipe;
+        tamed = w.tamed;
+        location_x = w.location_x;
+        location_y = w.location_y;   
+    }
     //Abstract method implementation
     @Override
     public void Eat() {

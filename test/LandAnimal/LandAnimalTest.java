@@ -91,6 +91,22 @@ public class LandAnimalTest {
     
     @Test
     /**
+     * Test copy constructor
+     *
+     */
+    public void testCopyConstructor() {
+        System.out.println("Test Copy constructor");
+        LandAnimal instance1,instance2;
+        instance1 = new LandAnimal(100,1,true,10,5);
+        instance2 = new LandAnimal(instance1);
+        assertTrue(instance2.getWeight() == 100);
+        assertTrue(instance2.getTipe() == 1);
+        assertTrue(instance2.getTamed() == true);
+        assertTrue(instance2.getX() == 10);
+        assertTrue(instance2.getY() == 5);
+    }
+    @Test
+    /**
      * Testing setter, of class LandAnimal.
      */
     public void testSetter() {
@@ -107,4 +123,5 @@ public class LandAnimalTest {
         assertTrue(instance.getX() == 100);
         assertTrue(instance.getY() == 1000);
     }
+    
 }

@@ -30,7 +30,16 @@ public class AirAnimal extends Animal {
         location_x = _x;
         location_y = _y;
     }
-
+    
+    //Copy Constructor
+    AirAnimal (AirAnimal a) {
+        weight = a.weight;
+        tipe = a.tipe;
+        tamed = a.tamed;
+        location_x = a.location_x;
+        location_y = a.location_y;
+    }
+            
     @Override
     public void Eat() {
         System.out.println("\"Nyam\" *then fly");

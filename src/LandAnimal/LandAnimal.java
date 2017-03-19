@@ -13,7 +13,8 @@ import Animal.Animal;
  * @author Mahdiar Naufal
  */
 public class LandAnimal extends Animal{
-    //Constructor
+    
+    //Constructor tanpa parameter
     LandAnimal () {
         weight = 0;
         tipe = 0;
@@ -22,6 +23,7 @@ public class LandAnimal extends Animal{
         location_y = -1;
     }
     
+    //Constructor dengan parameter
     LandAnimal (int _weight, 
             int _tipe, 
             boolean _tamed,
@@ -32,6 +34,15 @@ public class LandAnimal extends Animal{
         tamed = _tamed;
         location_x = _x;
         location_y = _y;
+    }
+    
+    //Copy Constructor
+    LandAnimal (LandAnimal l) {
+        weight = l.weight;
+        tipe = l.tipe;
+        tamed  = l.tamed;
+        location_x = l.location_x;
+        location_y = l.location_y;
     }
 
     @Override
