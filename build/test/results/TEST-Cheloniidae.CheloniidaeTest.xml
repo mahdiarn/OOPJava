@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="X540LA" name="Ursidae.UrsidaeTest" skipped="0" tests="6" time="0.106" timestamp="2017-03-19T10:28:54">
+<testsuite errors="0" failures="0" hostname="X540LA" name="Cheloniidae.CheloniidaeTest" skipped="0" tests="6" time="0.093" timestamp="2017-03-19T10:28:49">
   <properties>
     <property name="libs.jsp-compiler.javadoc" value="" />
     <property name="netbeans.autoupdate.country" value="US" />
@@ -57,7 +57,7 @@
     <property name="libs.j2me_common_ant.maven-pom" value="" />
     <property name="libs.spring-webmvc3.0.maven-pom" value="" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner Ursidae.UrsidaeTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\user\Desktop\OOPJava\build\test\results\TEST-Ursidae.UrsidaeTest.xml crashfile=C:\Users\user\Desktop\OOPJava\build\junitvmwatcher8045674779805506273.properties propsfile=C:\Users\user\Desktop\OOPJava\build\junit4967695976738786197.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner Cheloniidae.CheloniidaeTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\user\Desktop\OOPJava\build\test\results\TEST-Cheloniidae.CheloniidaeTest.xml crashfile=C:\Users\user\Desktop\OOPJava\build\junitvmwatcher3037615177813328894.properties propsfile=C:\Users\user\Desktop\OOPJava\build\junit2142042319187806217.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
     <property name="build.sysclasspath" value="ignore" />
@@ -403,12 +403,12 @@
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
     <property name="libs.javaee-web-api-7.0.javadoc" value="C:\Program Files\NetBeans 8.2\enterprise\docs\javaee-doc-api.jar" />
   </properties>
-  <testcase classname="Ursidae.UrsidaeTest" name="testParameter" time="0.005" />
-  <testcase classname="Ursidae.UrsidaeTest" name="testCopyConstructor" time="0.0" />
-  <testcase classname="Ursidae.UrsidaeTest" name="testEat" time="0.0" />
-  <testcase classname="Ursidae.UrsidaeTest" name="testDefault" time="0.0" />
-  <testcase classname="Ursidae.UrsidaeTest" name="testInteract" time="0.001" />
-  <testcase classname="Ursidae.UrsidaeTest" name="testSetter" time="0.0" />
+  <testcase classname="Cheloniidae.CheloniidaeTest" name="testParameter" time="0.004" />
+  <testcase classname="Cheloniidae.CheloniidaeTest" name="testCopyConstructor" time="0.0" />
+  <testcase classname="Cheloniidae.CheloniidaeTest" name="testEat" time="0.001" />
+  <testcase classname="Cheloniidae.CheloniidaeTest" name="testDefault" time="0.0" />
+  <testcase classname="Cheloniidae.CheloniidaeTest" name="testInteract" time="0.0" />
+  <testcase classname="Cheloniidae.CheloniidaeTest" name="testSetter" time="0.001" />
   <system-out><![CDATA[Test Parameter
 Test Copy constructor
 Eat
