@@ -11,7 +11,7 @@ import Animal.Animal;
  */
 public class AirAnimal extends Animal {
     //Constructor tanpa parameter
-    AirAnimal() {
+    public AirAnimal() {
         weight = 0;
         tipe = 0;
         tamed = false;
@@ -19,7 +19,7 @@ public class AirAnimal extends Animal {
         location_y = -1;
     }
     //Constructor dengan parameter
-    AirAnimal(int _weight,
+    public AirAnimal(int _weight,
             int _tipe,
             boolean _tamed,
             int _x,
@@ -32,7 +32,7 @@ public class AirAnimal extends Animal {
     }
     
     //Copy Constructor
-    AirAnimal (AirAnimal a) {
+    public AirAnimal (AirAnimal a) {
         weight = a.weight;
         tipe = a.tipe;
         tamed = a.tamed;
