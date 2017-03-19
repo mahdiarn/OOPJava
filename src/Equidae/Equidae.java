@@ -33,12 +33,12 @@ public class Equidae extends LandAnimal{
     }
     
     //Copy Constructor
-    public Equidae (Equidae g) {
-        weight = g.weight;
-        tipe = g.tipe;
-        tamed  = g.tamed;
-        location_x = g.location_x;
-        location_y = g.location_y;
+    public Equidae (Equidae e) {
+        weight = e.weight;
+        tipe = e.tipe;
+        tamed  = e.tamed;
+        location_x = e.location_x;
+        location_y = e.location_y;
     }
 
     @Override

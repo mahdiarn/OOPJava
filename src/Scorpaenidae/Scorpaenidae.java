@@ -3,15 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Ursidae;
-import LandAnimal.LandAnimal;
+package Scorpaenidae;
+import WaterAnimal.WaterAnimal;
 /**
  *
  * @author Mahdiar Naufal
  */
-public class Ursidae extends LandAnimal{
+public class Scorpaenidae extends WaterAnimal{
     //Constructor tanpa parameter
-    public Ursidae () {
+    public Scorpaenidae () {
         weight = 0;
         tipe = 0;
         tamed = false;
@@ -20,7 +20,7 @@ public class Ursidae extends LandAnimal{
     }
     
     //Constructor dengan parameter
-    public Ursidae (int _weight, 
+    public Scorpaenidae (int _weight, 
             int _tipe, 
             boolean _tamed,
             int _x,
@@ -33,12 +33,12 @@ public class Ursidae extends LandAnimal{
     }
     
     //Copy Constructor
-    public Ursidae (Ursidae u) {
-        weight = u.weight;
-        tipe = u.tipe;
-        tamed  = u.tamed;
-        location_x = u.location_x;
-        location_y = u.location_y;
+    public Scorpaenidae (Scorpaenidae s) {
+        weight = s.weight;
+        tipe = s.tipe;
+        tamed  = s.tamed;
+        location_x = s.location_x;
+        location_y = s.location_y;
     }
 
     @Override
