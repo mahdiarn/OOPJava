@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Selachii;
+package Octopodiae;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -16,9 +16,9 @@ import static org.junit.Assert.*;
  *
  * @author Mahdiar Naufal
  */
-public class SelachiiTest {
+public class OctopodiaeTest {
     
-    public SelachiiTest() {
+    public OctopodiaeTest() {
     }
     
     @BeforeClass
@@ -38,35 +38,35 @@ public class SelachiiTest {
     }
 
     /**
-     * Test of Eat method, of class Selachii.
+     * Test of Eat method, of class Octopodiae.
      */
     @Test
     public void testEat() {
         System.out.println("Eat");
-        Selachii instance = new Selachii();
+        Octopodiae instance = new Octopodiae();
         instance.Eat();
         // TODO review the generated test code and remove the default call to fail.
     }
 
     /**
-     * Test of Interact method, of class Selachii.
+     * Test of Interact method, of class Octopodiae.
      */
     @Test
     public void testInteract() {
         System.out.println("Interact");
-        Selachii instance = new Selachii();
+        Octopodiae instance = new Octopodiae();
         instance.Interact();
         // TODO review the generated test code and remove the default call to fail.
     }
     
     @Test
     /**
-     * Testing Default parameter, of class Selachii.
+     * Testing Default parameter, of class Octopodiae.
      */
     public void testDefault() {
         System.out.println("Test Default Parameter");
-        Selachii instance;
-        instance = new Selachii ();
+        Octopodiae instance;
+        instance = new Octopodiae ();
         assertTrue(instance.getWeight() == 0);
         assertTrue(instance.getTipe() == 0);
         assertTrue(instance.getTamed() == false);
@@ -76,12 +76,12 @@ public class SelachiiTest {
 
     @Test
     /**
-     * Testing parameter, of class Selachii.
+     * Testing parameter, of class Octopodiae.
      */
     public void testParameter() {
         System.out.println("Test Parameter");
-        Selachii instance;
-        instance = new Selachii(100,1,true,10,5);
+        Octopodiae instance;
+        instance = new Octopodiae(100,1,true,10,5);
         assertTrue(instance.getWeight() == 100);
         assertTrue(instance.getTipe() == 1);
         assertTrue(instance.getTamed() == true);
@@ -96,9 +96,9 @@ public class SelachiiTest {
      */
     public void testCopyConstructor() {
         System.out.println("Test Copy constructor");
-        Selachii instance1,instance2;
-        instance1 = new Selachii(100,1,true,10,5);
-        instance2 = new Selachii(instance1);
+        Octopodiae instance1,instance2;
+        instance1 = new Octopodiae(100,1,true,10,5);
+        instance2 = new Octopodiae(instance1);
         assertTrue(instance2.getWeight() == 100);
         assertTrue(instance2.getTipe() == 1);
         assertTrue(instance2.getTamed() == true);
@@ -108,11 +108,11 @@ public class SelachiiTest {
     
     @Test
     /**
-     * Testing setter, of class Selachii.
+     * Testing setter, of class Octopodiae.
      */
     public void testSetter() {
-        Selachii instance;
-        instance = new Selachii();
+        Octopodiae instance;
+        instance = new Octopodiae();
         instance.setWeight(200);
         instance.setTipe(2);
         instance.setTamed(true);
