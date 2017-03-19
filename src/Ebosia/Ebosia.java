@@ -45,7 +45,7 @@ public class Ebosia extends Scorpaenidae{
     //Override method eat
     @Override
     public void Eat() {
-        System.out.println("Porsi makanan zebra ini adalah " + weight*0.025 + " kg."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Porsi makanan ebosia ini adalah " + weight*0.025 + " kg."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override

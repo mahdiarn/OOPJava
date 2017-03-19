@@ -3,16 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Kuda;
-import Equidae.Equidae;
+package Lionfish;
+import Scorpaenidae.Scorpaenidae;
 import java.util.Random;
 /**
  *
  * @author Mahdiar Naufal
  */
-public class Kuda extends Equidae{
+public class Lionfish extends Scorpaenidae{
     //Constructor tanpa parameter
-    public Kuda () {
+    public Lionfish () {
         weight = 0;
         tipe = 0;
         tamed = false;
@@ -21,7 +21,7 @@ public class Kuda extends Equidae{
     }
     
     //Constructor dengan parameter
-    public Kuda (int _weight, 
+    public Lionfish (int _weight, 
             int _tipe, 
             boolean _tamed,
             int _x,
@@ -34,7 +34,7 @@ public class Kuda extends Equidae{
     }
     
     //Copy Constructor
-    public Kuda (Kuda s) {
+    public Lionfish (Lionfish s) {
         weight = s.weight;
         tipe = s.tipe;
         tamed  = s.tamed;
@@ -45,7 +45,7 @@ public class Kuda extends Equidae{
     //Override method eat
     @Override
     public void Eat() {
-        System.out.println("Porsi makanan kuda ini adalah " + weight*0.025 + " kg."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Porsi makanan lionfish ini adalah " + weight*0.025 + " kg."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
@@ -56,11 +56,11 @@ public class Kuda extends Equidae{
         int n = rand.nextInt(3);
         
         if (n == 0){
-            System.out.println("Kuda : \"Zzzzzz......\"");
+            System.out.println("Lionfish : \"Zzzzzz......\"");
         } else if (n == 1) {
-            System.out.println("Kuda : \"YIHA!!!!! HUSH!!!!\"");
+            System.out.println("Lionfish : \"Blubub.... blubub..\"");
         } else if (n == 2) {
-            System.out.println("Kuda : \"Nyam.. Nyam..\"");
+            System.out.println("Lionfish : \"Nyam.. Nyam..\"");
         }
         
     }
