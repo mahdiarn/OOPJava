@@ -3,16 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Kucing;
+package Singa;
 import Felidae.Felidae;
 import java.util.Random;
 /**
  *
  * @author Mahdiar Naufal
  */
-public class Kucing extends Felidae{
+public class Singa extends Felidae{
     //Constructor tanpa parameter
-    public Kucing () {
+    public Singa () {
         weight = 0;
         tipe = 0;
         tamed = false;
@@ -21,7 +21,7 @@ public class Kucing extends Felidae{
     }
     
     //Constructor dengan parameter
-    public Kucing (int _weight, 
+    public Singa (int _weight, 
             int _tipe, 
             boolean _tamed,
             int _x,
@@ -34,7 +34,7 @@ public class Kucing extends Felidae{
     }
     
     //Copy Constructor
-    public Kucing (Kucing s) {
+    public Singa (Singa s) {
         weight = s.weight;
         tipe = s.tipe;
         tamed  = s.tamed;
@@ -56,11 +56,11 @@ public class Kucing extends Felidae{
         int n = rand.nextInt(3);
         
         if (n == 0){
-            System.out.println("Kucing : \"Zzzzzz......\"");
+            System.out.println("Singa : \"Zzzzzz......\"");
         } else if (n == 1) {
-            System.out.println("Kucing : \"Miauw!!\"");
+            System.out.println("Singa : \"ROAR!!\"");
         } else if (n == 2) {
-            System.out.println("Kucing : \"Nyam.. Nyam..\"");
+            System.out.println("Singa : \"Nyam.. Nyam..\"");
         }
         
     }

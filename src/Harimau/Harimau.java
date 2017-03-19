@@ -56,11 +56,11 @@ public class Harimau extends Felidae{
         int n = rand.nextInt(3);
         
         if (n == 0){
-            System.out.println("Zzzzzz......");
+            System.out.println("Harimau : \"Zzzzzz......\"");
         } else if (n == 1) {
-            System.out.println("Grrr... !!");
+            System.out.println("Harimau : \"Grrr... !!\"");
         } else if (n == 2) {
-            System.out.println("Nyam.. Nyam..");
+            System.out.println("Harimau : \"Nyam.. Nyam..\"");
         }
         
     }
