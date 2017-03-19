@@ -3,16 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Elang;
-import Accipitridae.Accipitridae;
+package Kelelawar;
+import Molossidae.Molossidae;
 import java.util.Random;
 /**
  *
  * @author Mahdiar Naufal
  */
-public class Elang extends Accipitridae{
+public class Kelelawar extends Molossidae{
     //Constructor tanpa parameter
-    public Elang () {
+    public Kelelawar () {
         weight = 0;
         tipe = 0;
         tamed = false;
@@ -21,7 +21,7 @@ public class Elang extends Accipitridae{
     }
     
     //Constructor dengan parameter
-    public Elang (int _weight, 
+    public Kelelawar (int _weight, 
             int _tipe, 
             boolean _tamed,
             int _x,
@@ -34,7 +34,7 @@ public class Elang extends Accipitridae{
     }
     
     //Copy Constructor
-    public Elang (Elang s) {
+    public Kelelawar (Kelelawar s) {
         weight = s.weight;
         tipe = s.tipe;
         tamed  = s.tamed;
@@ -45,7 +45,7 @@ public class Elang extends Accipitridae{
     //Override method eat
     @Override
     public void Eat() {
-        System.out.println("Porsi makanan elang ini adalah " + weight*0.025 + " kg."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Porsi makanan kelelawar ini adalah " + weight*0.025 + " kg."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
@@ -56,11 +56,11 @@ public class Elang extends Accipitridae{
         int n = rand.nextInt(3);
         
         if (n == 0){
-            System.out.println("Elang : \"Zzzzzz......\"");
+            System.out.println("Kelelawar : \"Zzzzzz......\"");
         } else if (n == 1) {
-            System.out.println("Elang : \"QUARK!!!!\"");
+            System.out.println("Kelelawar : \"Krook! Krook!!\"");
         } else if (n == 2) {
-            System.out.println("Elang : \"Nyam.. Nyam..\"");
+            System.out.println("Kelelawar : \"Nyam.. Nyam..\"");
         }
         
     }
