@@ -124,4 +124,15 @@ public class ScorpaenidaeTest {
         assertTrue(instance.getX() == 100);
         assertTrue(instance.getY() == 1000);
     }
+    
+    /**
+     * Testing Render, of class Scorpaenidae
+     */
+    @Test
+    public void testRender() {
+        System.out.println("Test Render");
+        Scorpaenidae instance;
+        instance = new Scorpaenidae();
+        instance.Render();
+    }
 }

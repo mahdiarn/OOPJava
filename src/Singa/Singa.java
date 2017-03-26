@@ -61,7 +61,10 @@ public class Singa extends Felidae{
             System.out.println("Singa : \"ROAR!!\"");
         } else if (n == 2) {
             System.out.println("Singa : \"Nyam.. Nyam..\"");
-        }
-        
+        }        
+    }
+    @Override
+    public void Render() {
+        System.out.print("S");
     }
 }

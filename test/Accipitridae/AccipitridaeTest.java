@@ -124,4 +124,15 @@ public class AccipitridaeTest {
         assertTrue(instance.getX() == 100);
         assertTrue(instance.getY() == 1000);
     }
+    
+    /**
+     * Testing Render, of class Accipitridae
+     */
+    @Test
+    public void testRender() {
+        System.out.println("Test Render");
+        Accipitridae instance;
+        instance = new Accipitridae();
+        instance.Render();
+    }
 }

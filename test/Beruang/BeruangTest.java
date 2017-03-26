@@ -124,4 +124,15 @@ public class BeruangTest {
         assertTrue(instance.getX() == 100);
         assertTrue(instance.getY() == 1000);
     }
+    
+    /**
+     * Testing Render, of class Beruang
+     */
+    @Test
+    public void testRender() {
+        System.out.println("Test Render");
+        Beruang instance;
+        instance = new Beruang();
+        instance.Render();
+    }
 }

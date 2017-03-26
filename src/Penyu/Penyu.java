@@ -64,4 +64,8 @@ public class Penyu extends Cheloniidae{
         }
         
     }
+    @Override
+    public void Render() {
+        System.out.print("Y");
+    }
 }

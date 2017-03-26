@@ -51,4 +51,9 @@ public class WaterAnimal extends Animal {
         System.out.println("\"oi!\"");
     }
     
+    //Implementing interface
+    @Override
+    public void Render() {
+        System.out.print(" \n");
+    }
 }

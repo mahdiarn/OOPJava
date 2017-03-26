@@ -61,7 +61,10 @@ public class Harimau extends Felidae{
             System.out.println("Harimau : \"Grrr... !!\"");
         } else if (n == 2) {
             System.out.println("Harimau : \"Nyam.. Nyam..\"");
-        }
-        
+        }        
+    }
+    @Override
+    public void Render() {
+        System.out.print("H");
     }
 }

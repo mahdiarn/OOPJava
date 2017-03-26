@@ -61,7 +61,10 @@ public class Merpati extends Columbidae{
             System.out.println("Merpati : \"Cuit.. Cuit..\"");
         } else if (n == 2) {
             System.out.println("Merpati : \"Nyam.. Nyam..\"");
-        }
-        
+        }        
+    }
+    @Override
+    public void Render() {
+        System.out.print("M");
     }
 }

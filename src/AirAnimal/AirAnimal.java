@@ -49,4 +49,9 @@ public class AirAnimal extends Animal {
     public void Interact() {
         System.out.println("\"oi!\"");
     }
+    //Implementing interface
+    @Override
+    public void Render() {
+        System.out.print(" \n");
+    }
 }

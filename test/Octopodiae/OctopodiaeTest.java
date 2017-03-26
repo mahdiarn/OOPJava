@@ -124,4 +124,14 @@ public class OctopodiaeTest {
         assertTrue(instance.getX() == 100);
         assertTrue(instance.getY() == 1000);
     }
+    /**
+     * Testing Render, of class Octopodiae
+     */
+    @Test
+    public void testRender() {
+        System.out.println("Test Render");
+        Octopodiae instance;
+        instance = new Octopodiae();
+        instance.Render();
+    }
 }

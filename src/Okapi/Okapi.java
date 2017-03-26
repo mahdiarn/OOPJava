@@ -64,4 +64,8 @@ public class Okapi extends Giraffidae{
         }
         
     }
+    @Override
+    public void Render() {
+        System.out.print("O");
+    }
 }

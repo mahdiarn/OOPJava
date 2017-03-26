@@ -50,4 +50,5 @@ public class Cheloniidae extends WaterAnimal{
     public void Interact() {
         System.out.println("\"Hewan : oi!\""); //To change body of generated methods, choose Tools | Templates.
     }
+    
 }

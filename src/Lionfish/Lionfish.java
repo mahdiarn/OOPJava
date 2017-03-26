@@ -61,7 +61,10 @@ public class Lionfish extends Scorpaenidae{
             System.out.println("Lionfish : \"Blubub.... blubub..\"");
         } else if (n == 2) {
             System.out.println("Lionfish : \"Nyam.. Nyam..\"");
-        }
-        
+        }        
+    }
+    @Override
+    public void Render() {
+        System.out.print("I");
     }
 }

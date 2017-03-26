@@ -61,7 +61,10 @@ public class HiuPutih extends Selachii{
             System.out.println("HiuPutih : \"duunnn dunnn... duuuunnnn duun... duuunnnnnnnn dun dun dun dun dun dun dun dun dun dun dunnnnnnnnnnn dunnnn\"");
         } else if (n == 2) {
             System.out.println("HiuPutih : \"Nyam.. Nyam..\"");
-        }
-        
+        }        
+    }
+    @Override
+    public void Render() {
+        System.out.print("T");
     }
 }

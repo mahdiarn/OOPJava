@@ -61,7 +61,10 @@ public class BigBlueOct extends Octopodiae{
             System.out.println("BigBlueOct : \"Splash!\"");
         } else if (n == 2) {
             System.out.println("BigBlueOct : \"Nyam.. Nyam..\"");
-        }
-        
+        }        
+    }
+    @Override
+    public void Render() {
+        System.out.print("G");
     }
 }

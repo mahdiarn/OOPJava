@@ -49,5 +49,6 @@ public class Accipitridae extends AirAnimal{
     @Override
     public void Interact() {
         System.out.println("\"Hewan : oi!\""); //To change body of generated methods, choose Tools | Templates.
-    }
+    }    
+   
 }

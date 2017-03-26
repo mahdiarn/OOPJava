@@ -61,7 +61,10 @@ public class Kelelawar extends Molossidae{
             System.out.println("Kelelawar : \"Krook! Krook!!\"");
         } else if (n == 2) {
             System.out.println("Kelelawar : \"Nyam.. Nyam..\"");
-        }
-        
+        }        
+    }
+    @Override
+    public void Render() {
+        System.out.print("A");
     }
 }

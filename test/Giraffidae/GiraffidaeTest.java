@@ -124,4 +124,15 @@ public class GiraffidaeTest {
         assertTrue(instance.getX() == 100);
         assertTrue(instance.getY() == 1000);
     }
+    
+    /**
+     * Testing Render, of class Giraffidae
+     */
+    @Test
+    public void testRender() {
+        System.out.println("Test Render");
+        Giraffidae instance;
+        instance = new Giraffidae();
+        instance.Render();
+    }
 }

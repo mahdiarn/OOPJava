@@ -64,4 +64,8 @@ public class Panda extends Ursidae{
         }
         
     }
+    @Override
+    public void Render() {
+        System.out.print("D");
+    }
 }

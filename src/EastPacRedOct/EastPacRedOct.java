@@ -61,7 +61,10 @@ public class EastPacRedOct extends Octopodiae{
             System.out.println("EastPacRedOct : \"Splash!! Whirl!!!\"");
         } else if (n == 2) {
             System.out.println("EastPacRedOct : \"Nyam.. Nyam..\"");
-        }
-        
+        }        
+    }
+    @Override
+    public void Render() {
+        System.out.print("R");
     }
 }

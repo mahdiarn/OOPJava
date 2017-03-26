@@ -124,4 +124,14 @@ public class SelachiiTest {
         assertTrue(instance.getX() == 100);
         assertTrue(instance.getY() == 1000);
     }
+    /**
+     * Testing Render, of class Selachii
+     */
+    @Test
+    public void testRender() {
+        System.out.println("Test Render");
+        Selachii instance;
+        instance = new Selachii();
+        instance.Render();
+    }
 }

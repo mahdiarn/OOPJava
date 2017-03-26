@@ -61,7 +61,10 @@ public class Zebra extends Equidae{
             System.out.println("Zebra : \"YIHA!!!!!\"");
         } else if (n == 2) {
             System.out.println("Zebra : \"Nyam.. Nyam..\"");
-        }
-        
+        }        
+    }
+    @Override
+    public void Render() {
+        System.out.print("Z");
     }
 }

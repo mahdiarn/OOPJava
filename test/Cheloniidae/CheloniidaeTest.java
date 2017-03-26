@@ -124,4 +124,14 @@ public class CheloniidaeTest {
         assertTrue(instance.getX() == 100);
         assertTrue(instance.getY() == 1000);
     }
+    /**
+     * Testing Render, of class Cheloniidae
+     */
+    @Test
+    public void testRender() {
+        System.out.println("Test Render");
+        Cheloniidae instance;
+        instance = new Cheloniidae();
+        instance.Render();
+    }
 }

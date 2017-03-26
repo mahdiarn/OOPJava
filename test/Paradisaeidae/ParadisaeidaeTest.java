@@ -124,4 +124,14 @@ public class ParadisaeidaeTest {
         assertTrue(instance.getX() == 100);
         assertTrue(instance.getY() == 1000);
     }
+    /**
+     * Testing Render, of class Paradisaeidae
+     */
+    @Test
+    public void testRender() {
+        System.out.println("Test Render");
+        Paradisaeidae instance;
+        instance = new Paradisaeidae();
+        instance.Render();
+    }
 }

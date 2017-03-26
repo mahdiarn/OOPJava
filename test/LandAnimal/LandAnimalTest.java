@@ -124,4 +124,14 @@ public class LandAnimalTest {
         assertTrue(instance.getY() == 1000);
     }
     
+    /**
+     * Testing Render, of class LandAnimal
+     */
+    @Test
+    public void testRender() {
+        System.out.println("Test Render");
+        LandAnimal instance;
+        instance = new LandAnimal();
+        instance.Render();
+    }
 }
