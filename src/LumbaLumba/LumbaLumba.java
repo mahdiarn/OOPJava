@@ -61,7 +61,10 @@ public class LumbaLumba extends Delphidae{
             System.out.println("LumbaLumba : \"Splash! Splash! ikikikikikik!!\"");
         } else if (n == 2) {
             System.out.println("LumbaLumba : \"Nyam.. Nyam..\"");
-        }
-        
+        }        
+    }
+    @Override
+    public void Render() {
+        System.out.print("L");
     }
 }

@@ -61,7 +61,10 @@ public class Cendrawasih extends Paradisaeidae{
             System.out.println("Cendrawasih : \"Kukukukuk!!\"");
         } else if (n == 2) {
             System.out.println("Cendrawasih : \"Nyam.. Nyam..\"");
-        }
-        
+        }        
+    }
+    @Override
+    public void Render() {
+        System.out.print("C");
     }
 }

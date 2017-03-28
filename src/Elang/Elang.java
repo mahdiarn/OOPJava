@@ -61,7 +61,10 @@ public class Elang extends Accipitridae{
             System.out.println("Elang : \"QUARK!!!!\"");
         } else if (n == 2) {
             System.out.println("Elang : \"Nyam.. Nyam..\"");
-        }
-        
+        }        
+    }
+    @Override
+    public void Render() {
+        System.out.print("N");
     }
 }

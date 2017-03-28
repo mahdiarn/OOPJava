@@ -124,4 +124,14 @@ public class ColumbidaeTest {
         assertTrue(instance.getX() == 100);
         assertTrue(instance.getY() == 1000);
     }
+    /**
+     * Testing Render, of class Columbidae
+     */
+    @Test
+    public void testRender() {
+        System.out.println("Test Render");
+        Columbidae instance;
+        instance = new Columbidae();
+        instance.Render();
+    }
 }

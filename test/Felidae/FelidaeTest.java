@@ -124,4 +124,14 @@ public class FelidaeTest {
         assertTrue(instance.getX() == 100);
         assertTrue(instance.getY() == 1000);
     }
+    /**
+     * Testing Render, of class Felidae
+     */
+    @Test
+    public void testRender() {
+        System.out.println("Test Render");
+        Felidae instance;
+        instance = new Felidae();
+        instance.Render();
+    }
 }

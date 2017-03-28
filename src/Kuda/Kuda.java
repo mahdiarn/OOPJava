@@ -61,7 +61,10 @@ public class Kuda extends Equidae{
             System.out.println("Kuda : \"YIHA!!!!! HUSH!!!!\"");
         } else if (n == 2) {
             System.out.println("Kuda : \"Nyam.. Nyam..\"");
-        }
-        
+        }        
+    }
+    @Override
+    public void Render() {
+        System.out.print("U");
     }
 }

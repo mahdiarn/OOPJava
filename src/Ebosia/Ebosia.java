@@ -61,7 +61,10 @@ public class Ebosia extends Scorpaenidae{
             System.out.println("Ebosia : \"Blubub.... blubub... splash!!\"");
         } else if (n == 2) {
             System.out.println("Ebosia : \"Nyam.. Nyam..\"");
-        }
-        
+        }        
+    }
+    @Override
+    public void Render() {
+        System.out.print("E");
     }
 }

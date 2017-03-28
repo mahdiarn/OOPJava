@@ -55,5 +55,9 @@ public class LandAnimal extends Animal{
         System.out.println("\"Hewan : oi!\""); //To change body of generated methods, choose Tools | Templates.
     }
     
-  
+    //Implementing interface
+    @Override
+    public void Render() {
+        System.out.print(" \n");
+    }
 }

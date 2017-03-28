@@ -61,7 +61,10 @@ public class Rajawali extends Accipitridae{
             System.out.println("Rajawali : \"Rowk! Rowk!\"");
         } else if (n == 2) {
             System.out.println("Rajawali : \"Nyam.. Nyam..\"");
-        }
-        
+        }        
+    }
+    @Override
+    public void Render() {
+        System.out.print("W");
     }
 }

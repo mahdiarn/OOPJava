@@ -124,4 +124,15 @@ public class AirAnimalTest {
         assertTrue(instance.getX() == 100);
         assertTrue(instance.getY() == 1000);
     }
+    
+    /**
+     * Testing Render, of class AirAnimal
+     */
+    @Test
+    public void testRender() {
+        System.out.println("Test Render");
+        AirAnimal instance;
+        instance = new AirAnimal();
+        instance.Render();
+    }
 }

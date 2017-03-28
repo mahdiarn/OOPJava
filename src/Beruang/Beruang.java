@@ -62,6 +62,10 @@ public class Beruang extends Ursidae{
         } else if (n == 2) {
             System.out.println("Beruang : \"Nyam.. Nyam..\"");
         }
-        
+    }
+    
+    @Override
+    public void Render() {
+        System.out.print("B");
     }
 }

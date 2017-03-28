@@ -124,4 +124,14 @@ public class DelphidaeTest {
         assertTrue(instance.getX() == 100);
         assertTrue(instance.getY() == 1000);
     }
+    /**
+     * Testing Render, of class Delphidae
+     */
+    @Test
+    public void testRender() {
+        System.out.println("Test Render");
+        Delphidae instance;
+        instance = new Delphidae();
+        instance.Render();
+    }
 }

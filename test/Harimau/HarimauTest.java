@@ -124,4 +124,11 @@ public class HarimauTest {
         assertTrue(instance.getX() == 100);
         assertTrue(instance.getY() == 1000);
     }
+    @Test
+    public void testRender() {
+        System.out.println("Test Render");
+        Harimau instance;
+        instance = new Harimau();
+        instance.Render();
+    }
 }

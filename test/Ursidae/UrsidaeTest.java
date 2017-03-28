@@ -124,4 +124,15 @@ public class UrsidaeTest {
         assertTrue(instance.getX() == 100);
         assertTrue(instance.getY() == 1000);
     }
+    
+    /**
+     * Testing Render, of class Ursidae
+     */
+    @Test
+    public void testRender() {
+        System.out.println("Test Render");
+        Ursidae instance;
+        instance = new Ursidae();
+        instance.Render();
+    }
 }

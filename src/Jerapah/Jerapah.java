@@ -61,7 +61,10 @@ public class Jerapah extends Giraffidae{
             System.out.println("Jerapah : \"Kress...\"");
         } else if (n == 2) {
             System.out.println("Jerapah : \"Nyam.. Nyam..\"");
-        }
-        
+        }        
+    }
+    @Override
+    public void Render() {
+        System.out.print("J");
     }
 }
