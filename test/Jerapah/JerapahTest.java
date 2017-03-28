@@ -5,6 +5,7 @@
  */
 package Jerapah;
 
+import jerapah.Jerapah;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -123,12 +124,5 @@ public class JerapahTest {
         assertTrue(instance.getTamed() == true);
         assertTrue(instance.getX() == 100);
         assertTrue(instance.getY() == 1000);
-    }
-    @Test
-    public void testRender() {
-        System.out.println("Test Render");
-        Jerapah instance;
-        instance = new Jerapah();
-        instance.Render();
     }
 }

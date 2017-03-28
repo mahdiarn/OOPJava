@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package LumbaLumba;
-import Delphidae.Delphidae;
+package lumbaLumba;
+import delphidae.Delphidae;
 import java.util.Random;
 /**
  *
@@ -61,10 +61,7 @@ public class LumbaLumba extends Delphidae{
             System.out.println("LumbaLumba : \"Splash! Splash! ikikikikikik!!\"");
         } else if (n == 2) {
             System.out.println("LumbaLumba : \"Nyam.. Nyam..\"");
-        }        
-    }
-    @Override
-    public void Render() {
-        System.out.print("L");
+        }
+        
     }
 }

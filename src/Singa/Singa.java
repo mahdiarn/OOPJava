@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Singa;
-import Felidae.Felidae;
+package singa;
+import felidae.Felidae;
 import java.util.Random;
 /**
  *
@@ -61,10 +61,7 @@ public class Singa extends Felidae{
             System.out.println("Singa : \"ROAR!!\"");
         } else if (n == 2) {
             System.out.println("Singa : \"Nyam.. Nyam..\"");
-        }        
-    }
-    @Override
-    public void Render() {
-        System.out.print("S");
+        }
+        
     }
 }

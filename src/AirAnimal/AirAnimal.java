@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package AirAnimal;
-import Animal.Animal;
+package airAnimal;
+import animal.Animal;
 /**
  *
  * @author user
@@ -48,10 +48,5 @@ public class AirAnimal extends Animal {
     @Override
     public void Interact() {
         System.out.println("\"oi!\"");
-    }
-    //Implementing interface
-    @Override
-    public void Render() {
-        System.out.print(" \n");
     }
 }

@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Harimau;
-import Felidae.Felidae;
+package harimau;
+import felidae.Felidae;
 import java.util.Random;
 /**
  *
@@ -61,10 +61,7 @@ public class Harimau extends Felidae{
             System.out.println("Harimau : \"Grrr... !!\"");
         } else if (n == 2) {
             System.out.println("Harimau : \"Nyam.. Nyam..\"");
-        }        
-    }
-    @Override
-    public void Render() {
-        System.out.print("H");
+        }
+        
     }
 }

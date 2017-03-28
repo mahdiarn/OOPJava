@@ -3,21 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Zoo;
+package zoo;
 
-import AirHabitat.AirHabitat;
-import Cell.Cell;
-import Entrance.Entrance;
-import Exit.Exit;
-import LandHabitat.LandHabitat;
-import Park.Park;
-import Restaurant.Restaurant;
-import Road.Road;
-import WaterHabitat.WaterHabitat;
+import renderable.Renderable;
+import airHabitat.AirHabitat;
+import cell.Cell;
+import entrance.Entrance;
+import exit.Exit;
+import landHabitat.LandHabitat;
+import park.Park;
+import restaurant.Restaurant;
+import road.Road;
+import waterHabitat.WaterHabitat;
 
 /**
  * 
- * @author Rizky Faramita <13515055 @ std.stei.itb.ac.id>
+ * @author Rizky Faramita 13515055@std.stei.itb.ac.id
  * @version 1.1 (current version number of program)
  * @since 1.1 (the version of the package this class was first added to)
  */
@@ -50,6 +51,7 @@ public class Zoo {
         this.nbaris = 1;
         this.nkolom = 1;
         input_matrix = new Cell[1][1];
+        input_matrix[1][1] = new Cell();
         output_matrix = new char[1][1];
     }
     
@@ -62,6 +64,11 @@ public class Zoo {
         this.nbaris = nbrs;
         this.nkolom = nkol;        
         input_matrix = new Cell[nkolom][nbaris];
+        for (int i = 0;i<nkolom;i++) {
+            for (int j = 0;j<nbaris;j++) {
+                input_matrix[i][j] = new Cell();
+            }
+        }
         output_matrix = new char[nkolom][nbaris];       
     }
     
@@ -80,9 +87,9 @@ public class Zoo {
     
     /**
      * getter
-     * @param x Description absis
-     * @param y Description ordinat
-     * @return Description -5 <= output <= 3 
+     * @param x absis
+     * @param y ordinat
+     * @return nilai ell
      */
     public int getElementZoo(int x, int y){
         return input_matrix[x][y].getNilaiCell();
@@ -113,7 +120,7 @@ public class Zoo {
         Entrance entrance = new Entrance();
         Exit exit = new Exit();
         for (int i = 0; i < nbrs; i++) {
-            for (int j = 0; j < nkolom; j++) {
+            for (int j = 0; j < nkol; j++) {
                 switch (getElementZoo(i,j)) {
                     case 1:
                         land_habitat.render();
@@ -151,16 +158,16 @@ public class Zoo {
             System.out.println("");
         }
         System.out.println("Legenda; ");
-        System.out.println("+ = Land Habitat" + " " + "# = Road");
-        System.out.println("@ = Air Habitat" + " " + "~ = Park");
+        System.out.println("+ = Land Habitat" + "  " + "# = Road");
+        System.out.println("@ = Air Habitat" + "   " + "~ = Park");
         System.out.println("$ = Water Habitat" + " " + "& = Restaurant");
     }
     
     /**
      * setter elemen Zoo
-     * @param x Description absis
-     * @param y Description ordinat
-     * @param k Description elemen zoo, -5 <= k <= 3
+     * @param x absis
+     * @param y ordinat
+     * @param k elemen zoo
      */
     public void setElementZoo(int x, int y, int k){
         LandHabitat land_habitat = new LandHabitat();

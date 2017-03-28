@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Kelelawar;
-import Molossidae.Molossidae;
+package kelelawar;
+import molossidae.Molossidae;
 import java.util.Random;
 /**
  *
@@ -61,10 +61,7 @@ public class Kelelawar extends Molossidae{
             System.out.println("Kelelawar : \"Krook! Krook!!\"");
         } else if (n == 2) {
             System.out.println("Kelelawar : \"Nyam.. Nyam..\"");
-        }        
-    }
-    @Override
-    public void Render() {
-        System.out.print("A");
+        }
+        
     }
 }

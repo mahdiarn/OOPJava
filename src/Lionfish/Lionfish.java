@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Lionfish;
-import Scorpaenidae.Scorpaenidae;
+package lionfish;
+import scorpaenidae.Scorpaenidae;
 import java.util.Random;
 /**
  *
@@ -61,10 +61,7 @@ public class Lionfish extends Scorpaenidae{
             System.out.println("Lionfish : \"Blubub.... blubub..\"");
         } else if (n == 2) {
             System.out.println("Lionfish : \"Nyam.. Nyam..\"");
-        }        
-    }
-    @Override
-    public void Render() {
-        System.out.print("I");
+        }
+        
     }
 }

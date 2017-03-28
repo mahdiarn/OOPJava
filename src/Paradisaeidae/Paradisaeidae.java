@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Paradisaeidae;
-import AirAnimal.AirAnimal;
+package paradisaeidae;
+import airAnimal.AirAnimal;
 /**
  *
  * @author Mahdiar Naufal

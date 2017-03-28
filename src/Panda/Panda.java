@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Panda;
-import Ursidae.Ursidae;
+package panda;
+import ursidae.Ursidae;
 import java.util.Random;
 /**
  *
@@ -63,9 +63,5 @@ public class Panda extends Ursidae{
             System.out.println("Panda : \"Nyam.. Nyam..\"");
         }
         
-    }
-    @Override
-    public void Render() {
-        System.out.print("D");
     }
 }

@@ -5,6 +5,7 @@
  */
 package Paradisaeidae;
 
+import paradisaeidae.Paradisaeidae;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -123,15 +124,5 @@ public class ParadisaeidaeTest {
         assertTrue(instance.getTamed() == true);
         assertTrue(instance.getX() == 100);
         assertTrue(instance.getY() == 1000);
-    }
-    /**
-     * Testing Render, of class Paradisaeidae
-     */
-    @Test
-    public void testRender() {
-        System.out.println("Test Render");
-        Paradisaeidae instance;
-        instance = new Paradisaeidae();
-        instance.Render();
     }
 }

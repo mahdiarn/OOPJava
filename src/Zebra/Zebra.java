@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Zebra;
-import Equidae.Equidae;
+package zebra;
+import equidae.Equidae;
 import java.util.Random;
 /**
  *
@@ -61,10 +61,7 @@ public class Zebra extends Equidae{
             System.out.println("Zebra : \"YIHA!!!!!\"");
         } else if (n == 2) {
             System.out.println("Zebra : \"Nyam.. Nyam..\"");
-        }        
-    }
-    @Override
-    public void Render() {
-        System.out.print("Z");
+        }
+        
     }
 }

@@ -1,5 +1,5 @@
-package Animal;
-import Renderable.Renderable;
+package animal;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -10,7 +10,7 @@ import Renderable.Renderable;
  *
  * @author Mahdiar Naufal
  */
-public abstract class Animal implements Renderable{
+public abstract class Animal {
     //Atribut
     public int weight;
     public int tipe;

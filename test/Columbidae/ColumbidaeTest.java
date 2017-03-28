@@ -5,6 +5,7 @@
  */
 package Columbidae;
 
+import columbidae.Columbidae;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -123,15 +124,5 @@ public class ColumbidaeTest {
         assertTrue(instance.getTamed() == true);
         assertTrue(instance.getX() == 100);
         assertTrue(instance.getY() == 1000);
-    }
-    /**
-     * Testing Render, of class Columbidae
-     */
-    @Test
-    public void testRender() {
-        System.out.println("Test Render");
-        Columbidae instance;
-        instance = new Columbidae();
-        instance.Render();
     }
 }

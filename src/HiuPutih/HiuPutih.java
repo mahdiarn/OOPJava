@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package HiuPutih;
-import Selachii.Selachii;
+package hiuPutih;
+import selachii.Selachii;
 import java.util.Random;
 /**
  *
@@ -61,10 +61,7 @@ public class HiuPutih extends Selachii{
             System.out.println("HiuPutih : \"duunnn dunnn... duuuunnnn duun... duuunnnnnnnn dun dun dun dun dun dun dun dun dun dun dunnnnnnnnnnn dunnnn\"");
         } else if (n == 2) {
             System.out.println("HiuPutih : \"Nyam.. Nyam..\"");
-        }        
-    }
-    @Override
-    public void Render() {
-        System.out.print("T");
+        }
+        
     }
 }

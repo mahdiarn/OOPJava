@@ -5,6 +5,7 @@
  */
 package Zoo;
 
+import zoo.Zoo;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -14,7 +15,9 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Rizky Faramita
+ * @author Rizky Faramita 13515055@std.stei.itb.ac.id
+ * @version 1.1 (current version number of program)
+ * @since 1.1 (the version of the package this class was first added to)
  */
 public class ZooTest {
     

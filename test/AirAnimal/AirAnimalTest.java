@@ -5,6 +5,7 @@
  */
 package AirAnimal;
 
+import airAnimal.AirAnimal;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -123,16 +124,5 @@ public class AirAnimalTest {
         assertTrue(instance.getTamed() == true);
         assertTrue(instance.getX() == 100);
         assertTrue(instance.getY() == 1000);
-    }
-    
-    /**
-     * Testing Render, of class AirAnimal
-     */
-    @Test
-    public void testRender() {
-        System.out.println("Test Render");
-        AirAnimal instance;
-        instance = new AirAnimal();
-        instance.Render();
     }
 }

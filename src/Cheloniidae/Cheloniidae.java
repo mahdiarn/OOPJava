@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Cheloniidae;
-import WaterAnimal.WaterAnimal;
+package cheloniidae;
+import waterAnimal.WaterAnimal;
 /**
  *
  * @author Mahdiar Naufal
@@ -50,5 +50,4 @@ public class Cheloniidae extends WaterAnimal{
     public void Interact() {
         System.out.println("\"Hewan : oi!\""); //To change body of generated methods, choose Tools | Templates.
     }
-    
 }

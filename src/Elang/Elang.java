@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Elang;
-import Accipitridae.Accipitridae;
+package elang;
+import accipitridae.Accipitridae;
 import java.util.Random;
 /**
  *
@@ -61,10 +61,7 @@ public class Elang extends Accipitridae{
             System.out.println("Elang : \"QUARK!!!!\"");
         } else if (n == 2) {
             System.out.println("Elang : \"Nyam.. Nyam..\"");
-        }        
-    }
-    @Override
-    public void Render() {
-        System.out.print("N");
+        }
+        
     }
 }

@@ -5,6 +5,7 @@
  */
 package WaterAnimal;
 
+import waterAnimal.WaterAnimal;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -123,16 +124,5 @@ public class WaterAnimalTest {
         assertTrue(instance.getTamed() == true);
         assertTrue(instance.getX() == 100);
         assertTrue(instance.getY() == 1000);
-    }
-    
-    /**
-     * Testing Render, of class WaterAnimal
-     */
-    @Test
-    public void testRender() {
-        System.out.println("Test Render");
-        WaterAnimal instance;
-        instance = new WaterAnimal();
-        instance.Render();
     }
 }

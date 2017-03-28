@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Okapi;
-import Giraffidae.Giraffidae;
+package okapi;
+import giraffidae.Giraffidae;
 import java.util.Random;
 /**
  *
@@ -63,9 +63,5 @@ public class Okapi extends Giraffidae{
             System.out.println("Okapi : \"Nyam.. Nyam..\"");
         }
         
-    }
-    @Override
-    public void Render() {
-        System.out.print("O");
     }
 }

@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Accipitridae;
-import AirAnimal.AirAnimal;
+package accipitridae;
+import airAnimal.AirAnimal;
 /**
  *
  * @author Mahdiar Naufal
@@ -49,6 +49,5 @@ public class Accipitridae extends AirAnimal{
     @Override
     public void Interact() {
         System.out.println("\"Hewan : oi!\""); //To change body of generated methods, choose Tools | Templates.
-    }    
-   
+    }
 }

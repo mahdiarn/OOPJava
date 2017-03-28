@@ -5,6 +5,7 @@
  */
 package Cage;
 
+import cage.Cage;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;

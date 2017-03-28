@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Equidae;
-import LandAnimal.LandAnimal;
+package equidae;
+import landAnimal.LandAnimal;
 /**
  *
  * @author Mahdiar Naufal

@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Merpati;
-import Columbidae.Columbidae;
+package merpati;
+import columbidae.Columbidae;
 import java.util.Random;
 /**
  *
@@ -61,10 +61,7 @@ public class Merpati extends Columbidae{
             System.out.println("Merpati : \"Cuit.. Cuit..\"");
         } else if (n == 2) {
             System.out.println("Merpati : \"Nyam.. Nyam..\"");
-        }        
-    }
-    @Override
-    public void Render() {
-        System.out.print("M");
+        }
+        
     }
 }

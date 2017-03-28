@@ -5,6 +5,7 @@
  */
 package Singa;
 
+import singa.Singa;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -123,12 +124,5 @@ public class SingaTest {
         assertTrue(instance.getTamed() == true);
         assertTrue(instance.getX() == 100);
         assertTrue(instance.getY() == 1000);
-    }
-    @Test
-    public void testRender() {
-        System.out.println("Test Render");
-        Singa instance;
-        instance = new Singa();
-        instance.Render();
     }
 }

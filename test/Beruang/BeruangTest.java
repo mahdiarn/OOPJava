@@ -5,6 +5,7 @@
  */
 package Beruang;
 
+import beruang.Beruang;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -123,16 +124,5 @@ public class BeruangTest {
         assertTrue(instance.getTamed() == true);
         assertTrue(instance.getX() == 100);
         assertTrue(instance.getY() == 1000);
-    }
-    
-    /**
-     * Testing Render, of class Beruang
-     */
-    @Test
-    public void testRender() {
-        System.out.println("Test Render");
-        Beruang instance;
-        instance = new Beruang();
-        instance.Render();
     }
 }

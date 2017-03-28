@@ -5,6 +5,7 @@
  */
 package Scorpaenidae;
 
+import scorpaenidae.Scorpaenidae;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -123,16 +124,5 @@ public class ScorpaenidaeTest {
         assertTrue(instance.getTamed() == true);
         assertTrue(instance.getX() == 100);
         assertTrue(instance.getY() == 1000);
-    }
-    
-    /**
-     * Testing Render, of class Scorpaenidae
-     */
-    @Test
-    public void testRender() {
-        System.out.println("Test Render");
-        Scorpaenidae instance;
-        instance = new Scorpaenidae();
-        instance.Render();
     }
 }

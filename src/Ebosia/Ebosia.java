@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Ebosia;
-import Scorpaenidae.Scorpaenidae;
+package ebosia;
+import scorpaenidae.Scorpaenidae;
 import java.util.Random;
 /**
  *
@@ -61,10 +61,7 @@ public class Ebosia extends Scorpaenidae{
             System.out.println("Ebosia : \"Blubub.... blubub... splash!!\"");
         } else if (n == 2) {
             System.out.println("Ebosia : \"Nyam.. Nyam..\"");
-        }        
-    }
-    @Override
-    public void Render() {
-        System.out.print("E");
+        }
+        
     }
 }

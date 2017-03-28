@@ -5,6 +5,7 @@
  */
 package Equidae;
 
+import equidae.Equidae;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -123,15 +124,5 @@ public class EquidaeTest {
         assertTrue(instance.getTamed() == true);
         assertTrue(instance.getX() == 100);
         assertTrue(instance.getY() == 1000);
-    }
-    /**
-     * Testing Render, of class Equidae
-     */
-    @Test
-    public void testRender() {
-        System.out.println("Test Render");
-        Equidae instance;
-        instance = new Equidae();
-        instance.Render();
     }
 }

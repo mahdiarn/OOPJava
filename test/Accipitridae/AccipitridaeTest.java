@@ -5,6 +5,7 @@
  */
 package Accipitridae;
 
+import accipitridae.Accipitridae;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -123,16 +124,5 @@ public class AccipitridaeTest {
         assertTrue(instance.getTamed() == true);
         assertTrue(instance.getX() == 100);
         assertTrue(instance.getY() == 1000);
-    }
-    
-    /**
-     * Testing Render, of class Accipitridae
-     */
-    @Test
-    public void testRender() {
-        System.out.println("Test Render");
-        Accipitridae instance;
-        instance = new Accipitridae();
-        instance.Render();
     }
 }

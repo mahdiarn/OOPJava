@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Cendrawasih;
-import Paradisaeidae.Paradisaeidae;
+package cendrawasih;
+import paradisaeidae.Paradisaeidae;
 import java.util.Random;
 /**
  *
@@ -61,10 +61,7 @@ public class Cendrawasih extends Paradisaeidae{
             System.out.println("Cendrawasih : \"Kukukukuk!!\"");
         } else if (n == 2) {
             System.out.println("Cendrawasih : \"Nyam.. Nyam..\"");
-        }        
-    }
-    @Override
-    public void Render() {
-        System.out.print("C");
+        }
+        
     }
 }

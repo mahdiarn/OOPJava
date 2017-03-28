@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Kuda;
-import Equidae.Equidae;
+package kuda;
+import equidae.Equidae;
 import java.util.Random;
 /**
  *
@@ -61,10 +61,7 @@ public class Kuda extends Equidae{
             System.out.println("Kuda : \"YIHA!!!!! HUSH!!!!\"");
         } else if (n == 2) {
             System.out.println("Kuda : \"Nyam.. Nyam..\"");
-        }        
-    }
-    @Override
-    public void Render() {
-        System.out.print("U");
+        }
+        
     }
 }

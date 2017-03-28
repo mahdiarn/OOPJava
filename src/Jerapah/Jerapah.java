@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Jerapah;
-import Giraffidae.Giraffidae;
+package jerapah;
+import giraffidae.Giraffidae;
 import java.util.Random;
 /**
  *
@@ -61,10 +61,7 @@ public class Jerapah extends Giraffidae{
             System.out.println("Jerapah : \"Kress...\"");
         } else if (n == 2) {
             System.out.println("Jerapah : \"Nyam.. Nyam..\"");
-        }        
-    }
-    @Override
-    public void Render() {
-        System.out.print("J");
+        }
+        
     }
 }

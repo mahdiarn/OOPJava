@@ -5,6 +5,7 @@
  */
 package Felidae;
 
+import felidae.Felidae;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -123,15 +124,5 @@ public class FelidaeTest {
         assertTrue(instance.getTamed() == true);
         assertTrue(instance.getX() == 100);
         assertTrue(instance.getY() == 1000);
-    }
-    /**
-     * Testing Render, of class Felidae
-     */
-    @Test
-    public void testRender() {
-        System.out.println("Test Render");
-        Felidae instance;
-        instance = new Felidae();
-        instance.Render();
     }
 }

@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package EastPacRedOct;
-import Octopodiae.Octopodiae;
+package eastPacRedOct;
+import octopodiae.Octopodiae;
 import java.util.Random;
 /**
  *
@@ -61,10 +61,7 @@ public class EastPacRedOct extends Octopodiae{
             System.out.println("EastPacRedOct : \"Splash!! Whirl!!!\"");
         } else if (n == 2) {
             System.out.println("EastPacRedOct : \"Nyam.. Nyam..\"");
-        }        
-    }
-    @Override
-    public void Render() {
-        System.out.print("R");
+        }
+        
     }
 }

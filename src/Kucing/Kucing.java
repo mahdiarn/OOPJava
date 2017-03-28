@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Kucing;
-import Felidae.Felidae;
+package kucing;
+import felidae.Felidae;
 import java.util.Random;
 /**
  *
@@ -61,10 +61,7 @@ public class Kucing extends Felidae{
             System.out.println("Kucing : \"Miauw!!\"");
         } else if (n == 2) {
             System.out.println("Kucing : \"Nyam.. Nyam..\"");
-        }        
-    }
-    @Override
-    public void Render() {
-        System.out.print("K");
+        }
+        
     }
 }

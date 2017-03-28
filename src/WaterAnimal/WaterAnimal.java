@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package WaterAnimal;
-import Animal.Animal;
+package waterAnimal;
+import animal.Animal;
 /**
  *
  * @author Mahdiar Naufal
@@ -51,9 +51,4 @@ public class WaterAnimal extends Animal {
         System.out.println("\"oi!\"");
     }
     
-    //Implementing interface
-    @Override
-    public void Render() {
-        System.out.print(" \n");
-    }
 }

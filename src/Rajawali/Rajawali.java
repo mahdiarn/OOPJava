@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Rajawali;
-import Accipitridae.Accipitridae;
+package rajawali;
+import accipitridae.Accipitridae;
 import java.util.Random;
 /**
  *
@@ -61,10 +61,7 @@ public class Rajawali extends Accipitridae{
             System.out.println("Rajawali : \"Rowk! Rowk!\"");
         } else if (n == 2) {
             System.out.println("Rajawali : \"Nyam.. Nyam..\"");
-        }        
-    }
-    @Override
-    public void Render() {
-        System.out.print("W");
+        }
+        
     }
 }

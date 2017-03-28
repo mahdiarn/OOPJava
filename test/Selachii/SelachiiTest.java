@@ -5,6 +5,7 @@
  */
 package Selachii;
 
+import selachii.Selachii;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -123,15 +124,5 @@ public class SelachiiTest {
         assertTrue(instance.getTamed() == true);
         assertTrue(instance.getX() == 100);
         assertTrue(instance.getY() == 1000);
-    }
-    /**
-     * Testing Render, of class Selachii
-     */
-    @Test
-    public void testRender() {
-        System.out.println("Test Render");
-        Selachii instance;
-        instance = new Selachii();
-        instance.Render();
     }
 }

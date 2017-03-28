@@ -5,6 +5,7 @@
  */
 package Molossidae;
 
+import molossidae.Molossidae;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -123,15 +124,5 @@ public class MolossidaeTest {
         assertTrue(instance.getTamed() == true);
         assertTrue(instance.getX() == 100);
         assertTrue(instance.getY() == 1000);
-    }
-    /**
-     * Testing Render, of class Molossidae
-     */
-    @Test
-    public void testRender() {
-        System.out.println("Test Render");
-        Molossidae instance;
-        instance = new Molossidae();
-        instance.Render();
     }
 }

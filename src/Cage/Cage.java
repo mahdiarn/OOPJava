@@ -3,30 +3,30 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Cage;
+package cage;
 
-import Animal.Animal;
-import Beruang.Beruang;
-import BigBlueOct.BigBlueOct;
-import Cendrawasih.Cendrawasih;
-import EastPacRedOct.EastPacRedOct;
-import Ebosia.Ebosia;
-import Elang.Elang;
-import Harimau.Harimau;
-import HiuPutih.HiuPutih;
-import Jerapah.Jerapah;
-import Kelelawar.Kelelawar;
-import Kucing.Kucing;
-import Kuda.Kuda;
-import Lionfish.Lionfish;
-import LumbaLumba.LumbaLumba;
-import Merpati.Merpati;
-import Okapi.Okapi;
-import Panda.Panda;
-import Penyu.Penyu;
-import Rajawali.Rajawali;
-import Singa.Singa;
-import Zebra.Zebra;
+import animal.Animal;
+import beruang.Beruang;
+import bigBlueOct.BigBlueOct;
+import cendrawasih.Cendrawasih;
+import eastPacRedOct.EastPacRedOct;
+import ebosia.Ebosia;
+import elang.Elang;
+import harimau.Harimau;
+import hiuPutih.HiuPutih;
+import jerapah.Jerapah;
+import kelelawar.Kelelawar;
+import kucing.Kucing;
+import kuda.Kuda;
+import lionfish.Lionfish;
+import lumbaLumba.LumbaLumba;
+import merpati.Merpati;
+import okapi.Okapi;
+import panda.Panda;
+import penyu.Penyu;
+import rajawali.Rajawali;
+import singa.Singa;
+import zebra.Zebra;
 
 /**
  *
@@ -82,6 +82,70 @@ public class Cage {
         x = _x;
         y = _y;
         animal_id = _animal_id;
+        switch (animal_id) {
+            case 1:
+                animal = new Kucing(10,2,true,x,y);
+                break;
+            case 2:
+                animal = new Harimau(200,2,false,x,y);
+                break;
+            case 3:
+                animal = new Singa(150,2,false,x,y);
+                break;
+            case 4:
+                animal = new Jerapah(1200,1,true,x,y);
+                break;
+            case 5:
+                animal = new Okapi(300,1,true,x,y);
+                break;
+            case 6:
+                animal = new Panda(100,1,true,x,y);
+                break;
+            case 7:
+                animal = new Beruang(150,2,false,x,y);
+                break;
+            case 8:
+                animal = new Zebra(120,1,true,x,y);
+                break;
+            case 9:
+                animal = new Kuda(120,1,true,x,y);
+                break;
+            case 10:
+                animal = new Ebosia(120,2,true,x,y);
+                break;
+            case 11:
+                animal = new Lionfish(5,2,true,x,y);
+                break;
+            case 12:
+                animal = new LumbaLumba(50,2,true,x,y);
+                break;
+            case 13:
+                animal = new HiuPutih(100,2,false,x,y);
+                break;
+            case 14:
+                animal = new BigBlueOct(10,2,true,x,y);
+                break;
+            case 15:
+                animal = new EastPacRedOct(10,2,true,x,y);
+                break;
+            case 16:
+                animal = new Merpati(5,1,true,x,y);
+                break;
+            case 17:
+                animal = new Rajawali(25,2,false,x,y);
+                break;
+            case 18:
+                animal = new Elang(35,2,false,x,y);
+                break;
+            case 19:
+                animal = new Kelelawar(10,2,false,x,y);
+            case 20:
+                animal = new Cendrawasih(5,1,true,x,y);
+            case 21:
+                animal = new Penyu(30,1,true,x,y);
+            default:
+                break;
+        }
     }
     
     /**
@@ -93,6 +157,70 @@ public class Cage {
         x = c.x;
         y = c.y;
         animal_id = c.animal_id;
+        switch (animal_id) {
+            case 1:
+                animal = new Kucing(10,2,true,x,y);
+                break;
+            case 2:
+                animal = new Harimau(200,2,false,x,y);
+                break;
+            case 3:
+                animal = new Singa(150,2,false,x,y);
+                break;
+            case 4:
+                animal = new Jerapah(1200,1,true,x,y);
+                break;
+            case 5:
+                animal = new Okapi(300,1,true,x,y);
+                break;
+            case 6:
+                animal = new Panda(100,1,true,x,y);
+                break;
+            case 7:
+                animal = new Beruang(150,2,false,x,y);
+                break;
+            case 8:
+                animal = new Zebra(120,1,true,x,y);
+                break;
+            case 9:
+                animal = new Kuda(120,1,true,x,y);
+                break;
+            case 10:
+                animal = new Ebosia(120,2,true,x,y);
+                break;
+            case 11:
+                animal = new Lionfish(5,2,true,x,y);
+                break;
+            case 12:
+                animal = new LumbaLumba(50,2,true,x,y);
+                break;
+            case 13:
+                animal = new HiuPutih(100,2,false,x,y);
+                break;
+            case 14:
+                animal = new BigBlueOct(10,2,true,x,y);
+                break;
+            case 15:
+                animal = new EastPacRedOct(10,2,true,x,y);
+                break;
+            case 16:
+                animal = new Merpati(5,1,true,x,y);
+                break;
+            case 17:
+                animal = new Rajawali(25,2,false,x,y);
+                break;
+            case 18:
+                animal = new Elang(35,2,false,x,y);
+                break;
+            case 19:
+                animal = new Kelelawar(10,2,false,x,y);
+            case 20:
+                animal = new Cendrawasih(5,1,true,x,y);
+            case 21:
+                animal = new Penyu(30,1,true,x,y);
+            default:
+                break;
+        }
     }
     
     /**

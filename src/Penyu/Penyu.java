@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Penyu;
-import Cheloniidae.Cheloniidae;
+package penyu;
+import cheloniidae.Cheloniidae;
 import java.util.Random;
 /**
  *
@@ -63,9 +63,5 @@ public class Penyu extends Cheloniidae{
             System.out.println("Penyu : \"Nyam.. Nyam..\"");
         }
         
-    }
-    @Override
-    public void Render() {
-        System.out.print("Y");
     }
 }

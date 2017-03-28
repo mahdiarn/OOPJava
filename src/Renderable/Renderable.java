@@ -3,12 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Renderable;
+package renderable;
 
 /**
  *
  * @author Mahdiar Naufal
  */
 public interface Renderable {
-    void Render();
+    /**
+     * mencetak element zoo
+     * @param x
+     * @param y
+     * @param c 
+     */
+    void render();
 }
