@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author asus
+ * @author Rizky Faramita
  */
 public class ZooTest {
     
@@ -38,48 +38,48 @@ public class ZooTest {
     }
 
     /**
-     * Test of GetElementZoo method of class Zoo.
+     * Test of getElementZoo method, of class Zoo.
      */
     @Test
     public void testGetElementZoo() {
-        System.out.println("GetElementZoo");
-        int x = 0;
-        int y = 0;
-        Zoo instance = new Zoo();
-        int expResult = 0;
-        int result = instance.GetElementZoo(x, y);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        System.out.println("getElementZoo dites bersama setElementZoo");
     }
 
     /**
-     * Test of PrintZoo method of class Zoo.
+     * Test of printZoo method, of class Zoo.
      */
     @Test
     public void testPrintZoo() {
-        System.out.println("PrintZoo");
-        int nbrs = 0;
-        int nkol = 0;
-        Zoo instance = new Zoo();
-        instance.PrintZoo(nbrs, nkol);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        System.out.println("printZoo");
+        int nbrs = 2;
+        int nkol = 2;
+        Zoo instance = new Zoo(nbrs,nkol);
+        instance.setElementZoo(0,0,1);
+        instance.setElementZoo(0,1,2);
+        instance.setElementZoo(1,0,3);
+        instance.setElementZoo(1,1,-1);
+        instance.printZoo(nbrs, nkol);
+        //test case cek char terakhir
+        int expFourthChar = -1;
+        int resultFourthChar = instance.getElementZoo(1,1);
+        assertEquals(expFourthChar, resultFourthChar);
     }
 
     /**
-     * Test of SetElementZoo method of class Zoo.
+     * Test of setElementZoo method, of class Zoo.
      */
     @Test
     public void testSetElementZoo() {
-        System.out.println("SetElementZoo");
+        System.out.println("setElementZoo");
+        //test case menggunakan animal kucing
         int x = 0;
         int y = 0;
-        int k = 0;
+        int k = 1;
         Zoo instance = new Zoo();
-        instance.SetElementZoo(x, y, k);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-    
+        instance.setElementZoo(x, y, k);
+        int expAnimalId = k;
+        //sekaligus mengecek method getElementZoo
+        int resultAnimalId = instance.getElementZoo(0,0);
+        assertEquals(expAnimalId, resultAnimalId);
+    }  
 }

@@ -5,6 +5,16 @@
  */
 package Zoo;
 
+import AirHabitat.AirHabitat;
+import Cell.Cell;
+import Entrance.Entrance;
+import Exit.Exit;
+import LandHabitat.LandHabitat;
+import Park.Park;
+import Restaurant.Restaurant;
+import Road.Road;
+import WaterHabitat.WaterHabitat;
+
 /**
  * 
  * @author Rizky Faramita <13515055 @ std.stei.itb.ac.id>
@@ -12,6 +22,7 @@ package Zoo;
  * @since 1.1 (the version of the package this class was first added to)
  */
 public class Zoo {
+    
     /**
      * height dari matriks
      */
@@ -23,9 +34,14 @@ public class Zoo {
     public final int nkolom;
     
     /**
-     * matriks untuk menyimpan map Zoo 
+     * matriks untuk menyimpan map Zoo dari file eksternal 
      */
-    private Cell[][] matriks_sel;
+    private Cell[][] input_matrix;
+    
+    /**
+     * matriks untuk mencetak map Zoo setelah transformasi
+     */
+    private char[][] output_matrix;
     
     /**
      * ctor tanpa parameter
@@ -33,30 +49,20 @@ public class Zoo {
     public Zoo(){
         this.nbaris = 1;
         this.nkolom = 1;
-        matriks_sel = new Cell[][1];
-        matriks_sel[1] = new Cell[1];
-        Cell matriks[1][1];
+        input_matrix = new Cell[1][1];
+        output_matrix = new char[1][1];
     }
     
     /**
      * ctor dengan dua parameter
-    * @param nbaris Description inisialisasi untuk public final nbaris
-     * @param nkolom Description inisialisasi untuk public final nkolom
      * @param nbrs Description masukan untuk nbaris
      * @param nkol Description masukan untuk nkolom
      */
     public Zoo(int nbrs, int nkol){
         this.nbaris = nbrs;
         this.nkolom = nkol;        
-        matriks_sel = new Cell[][nbaris];
-        for (int i = 0; i < nbaris; i++) {
-            matriks_sel[i] = new Cell[nkolom];
-        }
-        for (int i = 0; i < nbaris; i++) {
-            for (int j = 0; j < nkolom; j++) {
-                Cell matriks[i][j];
-            }
-        }
+        input_matrix = new Cell[nkolom][nbaris];
+        output_matrix = new char[nkolom][nbaris];       
     }
     
     /**
@@ -66,15 +72,9 @@ public class Zoo {
     public Zoo(final Zoo z){
         this.nbaris = z.nbaris;
         this.nkolom = z.nkolom;
-        
-        matriks_sel = new Cell[][nbaris];
+        input_matrix = new Cell[nkolom][nbaris];
         for (int i = 0; i < nbaris; i++) {
-            matriks_sel[i] = new Cell[nkolom];
-        }
-        for (int i = 0; i < nbaris; i++) {
-            for (int j = 0; j < nkolom; j++) {
-                matriks_sel[i][j] = z.matriks_sel[i][j];
-            }
+            System.arraycopy(z.input_matrix[i], 0, input_matrix[i], 0, nkolom);
         }
     }
     
@@ -84,8 +84,18 @@ public class Zoo {
      * @param y Description ordinat
      * @return Description -5 <= output <= 3 
      */
-    public int GetElementZoo(int x, int y){
-        return matriks_sel[x][y].GetNilaiCell();
+    public int getElementZoo(int x, int y){
+        return input_matrix[x][y].getNilaiCell();
+    }
+    
+    /**
+     * getter output_matrix
+     * @param x absis
+     * @param y ordinat
+     * @return char pada indeks ke x,y
+     */
+    public char getOutputMatrix(int x, int y) {
+        return output_matrix[x][y];
     }
     
     /**
@@ -93,9 +103,9 @@ public class Zoo {
      * @param nbrs Description masukan untuk baris
      * @param nkol Description masukan untuk kolom
      */
-    public void PrintZoo(int nbrs, int nkol){
+    public void printZoo(int nbrs, int nkol){
         LandHabitat land_habitat = new LandHabitat();
-        WaiterHabitat water_habitat = new WaterHabitat();
+        WaterHabitat water_habitat = new WaterHabitat();
         AirHabitat air_habitat = new AirHabitat();
         Road road = new Road();
         Park park = new Park();
@@ -104,41 +114,46 @@ public class Zoo {
         Exit exit = new Exit();
         for (int i = 0; i < nbrs; i++) {
             for (int j = 0; j < nkolom; j++) {
-                switch (GetElementZoo(i,j)) {
+                switch (getElementZoo(i,j)) {
                     case 1:
-                        land_habitat.Render();
+                        land_habitat.render();
                         break;
                     case 2:
-                        water_habitat.Render();
+                        air_habitat.render();
                         break;
                     case 3:
-                        air_habitat.Render();
+                        water_habitat.render();
                         break;
                     case -1:
-                        road.Render();
+                        road.render();
                         break;
                     case -2:
-                        park.Render();
+                        park.render();
                         break;
                     case -3:
-                        restaurant.Render();
+                        restaurant.render();
                         break;
                     case -4:
-                        entrance.Render();
+                        entrance.render();
                         break;
                     case -5:
-                        exit.Render();
+                        exit.render();
                         break;
                     default:
                         break;
                 }
             }
+        }
+        for (int i = 0; i < nbrs; i++) {
+            for (int j = 0; j < nkolom; j++) {
+                System.out.print(output_matrix[i][j]);
+            }
             System.out.println("");
         }
         System.out.println("Legenda; ");
-        System.out.println("+ = Land Habitat" + "" + "# = Road");
-        System.out.println("@ = Air Habitat" + "" + "~ = Park");
-        System.out.println("$ = Water Habitat" + "" + "& = Restaurant");
+        System.out.println("+ = Land Habitat" + " " + "# = Road");
+        System.out.println("@ = Air Habitat" + " " + "~ = Park");
+        System.out.println("$ = Water Habitat" + " " + "& = Restaurant");
     }
     
     /**
@@ -147,7 +162,7 @@ public class Zoo {
      * @param y Description ordinat
      * @param k Description elemen zoo, -5 <= k <= 3
      */
-    public void SetElementZoo(int x, int y, int k){
+    public void setElementZoo(int x, int y, int k){
         LandHabitat land_habitat = new LandHabitat();
         WaterHabitat water_habitat = new WaterHabitat();
         AirHabitat air_habitat = new AirHabitat();
@@ -159,28 +174,28 @@ public class Zoo {
 
         switch (k) {
             case 1:
-                matriks_sel[x][y] = land_habitat;
+                input_matrix[x][y] = land_habitat;
                 break;
             case 2:
-                matriks_sel[x][y] = water_habitat;
+                input_matrix[x][y] = water_habitat;
                 break;
             case 3:
-                matriks_sel[x][y] = air_habitat;
+                input_matrix[x][y] = air_habitat;
                 break;
             case -1:
-                matriks_sel[x][y] = road;
+                input_matrix[x][y] = road;
                 break;
             case -2:
-                matriks_sel[x][y] = park;
+                input_matrix[x][y] = park;
                 break;
             case -3:
-                matriks_sel[x][y] = restaurant;
+                input_matrix[x][y] = restaurant;
                 break;
             case -4:
-                matriks_sel[x][y] = entrance;
+                input_matrix[x][y] = entrance;
                 break;
             case -5:
-                matriks_sel[x][y] = exit;
+                input_matrix[x][y] = exit;
                 break;
             default:
                 break;
