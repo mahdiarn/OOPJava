@@ -54,7 +54,7 @@ public class Driver {
 
     /**
      * Driver
-     * @throws FileNotFoundException 
+     * @throws FileNotFoundException untuk cek driver
      */
     public Driver() throws FileNotFoundException {
         user = new Player();

@@ -10,9 +10,7 @@ import cage.Cage;
 
 /**
  *
- * @author Rizky Faramita <13515055 @ std.stei.itb.ac.id>
- * @version 1.1 (current version number of program)
- * @since 1.1 (the version of the package this class was first added to)
+ * @author Rizky Faramita 13515055@std.stei.itb.ac.id
  */
 public class Cages {
     /**

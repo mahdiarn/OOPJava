@@ -26,7 +26,7 @@ public class Cell implements Renderable{
     
     /**
      * ctor dengan satu parameter
-     * @param _nilai_cell 
+     * @param _nilai_cell nilai dari cell
      */ 
     public Cell(int _nilai_cell) {
         nilai_cell = _nilai_cell;

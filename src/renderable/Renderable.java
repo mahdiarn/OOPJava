@@ -12,9 +12,6 @@ package renderable;
 public interface Renderable {
     /**
      * mencetak element zoo
-     * @param x
-     * @param y
-     * @param c 
      */
     void render();
 }

@@ -30,9 +30,7 @@ import zebra.Zebra;
 
 /**
  *
- * @author Rizky Faramita <13515055 @ std.stei.itb.ac.id>
- * @version 1.1 (current version number of program)
- * @since 1.1 (the version of the package this class was first added to)
+ * @author Rizky Faramita 13515055@std.stei.itb.ac.id
  */
 public class Cage {
     /**
@@ -259,8 +257,8 @@ public class Cage {
      * setter cage pada kordinat tertentu
      * @param _x absis
      * @param _y ordinat
-     * @param _cage_id
-     * @param _animal_id 
+     * @param _cage_id id dari cage
+     * @param _animal_id id dari animal
      */
     public void setCage(int _x, int _y, int _cage_id, int _animal_id){
         x = _x;
