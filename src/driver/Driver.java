@@ -54,7 +54,7 @@ public class Driver {
 
     /**
      * Driver
-     * @throws FileNotFoundException untuk cek driver
+     * @throws FileNotFoundException 
      */
     public Driver() throws FileNotFoundException {
         user = new Player();
@@ -440,9 +440,9 @@ public class Driver {
                 PrintMap(x1,y1,x2,y2);
                 PrintLegend();
             } else if (pilihan == 2) {
-                user.setX(18);
-                user.setY(20);
-                PrintMap(user.getX() - 1, user.getY() - 1);
+                user.setX(17);
+                user.setY(19);
+                PrintMap(user.getX(), user.getY());
                 PrintLegend();
                 System.out.println();
                 PrintInterfaceTour();
@@ -507,8 +507,8 @@ public class Driver {
     }
   
     public void Interaksi() {
-        int ux = user.getX()-1;
-        int uy = user.getY()-1;
+        int ux = user.getX();
+        int uy = user.getY();
         int animal_left,animal_right,animal_up,animal_down;
 
         if ((ux-1) < 0) {
